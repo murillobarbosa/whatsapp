@@ -247,6 +247,17 @@ body {
 
 
 
+@media (max-width: 640px){
+    .rightSide{
+        display: none;
+    }
+}
+    
+
+
+
+
+
 
 
 
