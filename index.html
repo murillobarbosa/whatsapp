@@ -290,12 +290,22 @@
                 <label for="calls">Calls</label>
                 <div class="underline"></div>
             </div>
+
+            <div class="quickBtn">
+                <div class="btn message"><ion-icon name="chatbubble"></ion-icon></div>
+                <div class="btn camers">
+                    <div class="pencil"><ion-icon name="pencil-sharp"></ion-icon></div>
+                    <ion-icon name="camera"></ion-icon>
+                </div>
+                <div class="btn call"><ion-icon name="call"></ion-icon></div>
+            </div>
+
             <div class="content1">
                 <div class="box chats">
                     <div class="box chats">
                         <div class="data">
                             <div class="chatList1">
-                                <div class="block1 unread1">
+                                <div class="block1 unread1 open">
                                     <div class="imgbx1">
                                         <img src="img/contact6.png" alt="">
                                     </div>
@@ -583,14 +593,111 @@
                     </div>
                 </div>
             </div>
-            <div class="box calls">Calls</div>
+            <div class="box calls">
+                <div class="data">
+                    <div class="chatList1">
+                        <div class="block1">
+                            <div class="imgbx1 green">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </div>
+                            <div class="details1">
+                                <div class="listHead">
+                                    <h4>Create call link</h4>
+                                    <p class="time">10:56</p>
+                                </div>
+                                <div class="message_p1">
+                                    <p>Share a link for your WhatsApp call</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <label>Recent</label>
+                        <div class="block1">
+                            <div class="imgbx1">
+                                <img src="img/contact7.png" alt="">
+                            </div>
+                            <div class="details1">
+                                <div class="listHead">
+                                    <h4>Diana</h4>
+                                   
+                                </div>
+                                <div class="message_p1 incoming">
+                                    <p><ion-icon name="arrow-down"></ion-icon>28/11/2022, 05:45</p>
+                                    
+                                </div>
+                            </div>
+                            <ion-icon name="call" class="call"></ion-icon>
+                        </div>
 
+                        <div class="block1">
+                            <div class="imgbx1">
+                                <img src="img/contact7.png" alt="">
+                            </div>
+                            <div class="details1">
+                                <div class="listHead">
+                                    <h4>Ashraf</h4>
+                                   
+                                    
+                                </div>
+                                <div class="message_p1 outgoing">
+                                    <p><ion-icon name="arrow-up"></ion-icon>25/11/2022, 21:16</p>
+                                    
+                                </div>
+                            </div>
+                            <ion-icon name="call" class="call"></ion-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatBox1">
+            <div class="chat_header">
+                <div class="imgcontent">
+                    <ion-icon name="arrow-back-sharp" class="back"></ion-icon>
+                    <div class="imgBx1">
+                        <img src="img/contact6.png" alt="">
+                    </div>
+                    <h3>Alex Smith <br><span>Online</span></h3>
+                </div>
+                <div class="actionBtns">
+                    <ion-icon name="videocam"></ion-icon>
+                    <ion-icon name="call"></ion-icon>
+                    <ion-icon name="ellipsis-vertical"></ion-icon>
+                </div>
+            </div>
+            <div class="messageBox">
+                <div class="messagee">How to make WhatsApp clone using html and css hhgyhjhg? <br><span class="time">10:19</span></div>
+            </div>
+            <div class="messageInput">
+                <div class="input">
+                    <ion-icon name="happy-outline"></ion-icon>
+                    <input type="text" placeholder="Messagem">
+                    <ion-icon name="attach-outline" class="deg45"></ion-icon>
+                    <ion-icon name="camera"></ion-icon>
+
+                </div>
+                <div class="mic"><ion-icon name="mic"></ion-icon></div>
+            </div>
         </div>
     </div>
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let back = document.querySelector('.back');
+        let chatBox1 = document.querySelector('.chatBox1');
+        let open = document.querySelector('.open')
+
+        back.onclick = function(){
+            chatBox1.classList.add('hide')
+        }
+        open.onclick = function(){
+            chatBox1.classList.remove('hide')
+        }
+    </script>
 
 </body>
 
